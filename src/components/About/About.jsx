@@ -9,13 +9,17 @@ const stats = [
 export default function About() {
   return (
     <section id="about" className="py-section-gap relative">
-      <div className="max-w-[1280px] mx-auto px-gutter grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+      {/* Container: responsive gutters + tighter gap on mobile (was gap-24/96px on all screens, now gap-12/48px → gap-16/64px) */}
+      <div className="max-w-[1280px] mx-auto px-4 md:px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
         {/* Left – Image */}
         <div className="relative">
-          <div className="absolute -bottom-10 -left-10 w-48 h-48 border border-primary/20 rounded-full line-pattern opacity-30" />
-          <div className="bg-surface-container overflow-hidden rounded-3xl border border-outline-variant relative z-10 p-6">
+          {/* Decorative circle positioned on 8px grid: -bottom-8=32px, -left-8=32px (was -10/40px) */}
+          <div className="absolute -bottom-8 -left-8 w-48 h-48 border border-primary/20 rounded-full line-pattern opacity-30" />
+          {/* p-4=16px mobile, p-6=24px desktop for image frame breathing room */}
+          <div className="bg-surface-container overflow-hidden rounded-3xl border border-outline-variant relative z-10 p-4 md:p-6">
+            {/* Image height: 480px=60×8, on grid (was 500px not on grid) */}
             <img
-              className="w-full h-[500px] object-cover rounded-2xl shadow-xl"
+              className="w-full h-[480px] object-cover rounded-2xl shadow-xl"
               src={aboutImg}
               alt="Saroj Kumar Yadav working at desk"
             />
@@ -24,7 +28,7 @@ export default function About() {
 
         {/* Right – Content */}
         <div className="space-y-8">
-          <div className="inline-block px-4 py-1 bg-primary-container/10 border border-primary/20 rounded-full text-primary font-geist text-[14px] leading-none tracking-[0.05em] font-medium">
+          <div className="inline-block px-4 py-2 bg-primary-container/10 border border-primary/20 rounded-full text-primary font-geist text-[14px] leading-none tracking-[0.05em] font-medium">
             ABOUT ME
           </div>
 
@@ -44,7 +48,8 @@ export default function About() {
           </p>
 
           {/* Stats Grid */}
-          <div className="grid grid-cols-3 gap-6 pt-6">
+          {/* Stats: gap-4 mobile gap-6 desktop, pt-8=32px top separation (was pt-6/24px for more breathing room) */}
+          <div className="grid grid-cols-3 gap-4 md:gap-6 pt-8">
             {stats.map((s) => (
               <div
                 key={s.label}
@@ -64,7 +69,7 @@ export default function About() {
 
           <a
             href="#contact"
-            className="inline-flex bg-primary-container text-on-primary-container px-10 py-4 rounded-full font-geist text-[14px] leading-none tracking-[0.05em] font-bold items-center gap-2 hover:shadow-lg hover:shadow-primary/20 transition-all cursor-pointer"
+            className="inline-flex bg-primary-container text-on-primary-container px-8 py-4 rounded-full font-geist text-[14px] leading-none tracking-[0.05em] font-bold items-center gap-2 hover:shadow-lg hover:shadow-primary/20 transition-all cursor-pointer"
           >
             GET IN TOUCH{" "}
             <span className="material-symbols-outlined">arrow_outward</span>

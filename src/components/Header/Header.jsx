@@ -43,9 +43,10 @@ export default function Header() {
         scrolled ? "shadow-lg shadow-black/20" : ""
       }`}
     >
+      {/* Container: px-4 (16px) on mobile, px-6 (24px) on desktop for consistent gutters */}
       <div
-        className={`flex justify-between items-center px-gutter max-w-[1280px] mx-auto transition-all duration-300 ${
-          scrolled ? "py-2" : "py-4"
+        className={`flex justify-between items-center px-4 md:px-6 max-w-[1280px] mx-auto transition-all duration-300 ${
+          scrolled ? "py-3" : "py-4"
         }`}
       >
         {/* Logo */}
@@ -58,7 +59,8 @@ export default function Header() {
         </a>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex gap-8">
+        {/* gap-6 = 24px between nav links (was gap-8/32px, tighter for balanced spacing) */}
+        <nav className="hidden md:flex gap-6">
           {navLinks.map((link) => (
             <a
               key={link.href}
@@ -116,7 +118,8 @@ export default function Header() {
           mobileOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <nav className="flex flex-col gap-1 px-gutter py-4">
+        {/* gap-2=8px between mobile nav items (was gap-1/4px, too tight) */}
+        <nav className="flex flex-col gap-2 px-4 py-4">
           {navLinks.map((link) => (
             <a
               key={link.href}
@@ -131,10 +134,11 @@ export default function Header() {
               {link.label}
             </a>
           ))}
+          {/* mt-4=16px separates CTA from nav items (was mt-2/8px, too close) */}
           <a
             href="#contact"
             onClick={(e) => handleNavClick(e, "#contact")}
-            className="mt-2 text-center bg-primary-container text-on-primary-container px-6 py-3 rounded-full font-geist text-[14px] font-bold"
+            className="mt-4 text-center bg-primary-container text-on-primary-container px-6 py-3 rounded-full font-geist text-[14px] font-bold"
           >
             Let's Talk
           </a>

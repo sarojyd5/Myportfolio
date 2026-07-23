@@ -59,12 +59,12 @@
   --font-inter: "Inter", sans-serif;
   --font-geist: "Geist", sans-serif;
 
-  /* Spacing Tokens */
+  /* Spacing Tokens – strict 8px grid (8, 16, 24, 32, 48, 64, 80, 96) */
   --spacing-base: 8px;
   --spacing-gutter: 24px;
-  --spacing-section-gap: 120px;
+  --spacing-section-gap: 96px; /* 12×8 — was 120px (not on grid) */
   --spacing-container-max: 1280px;
-  --spacing-margin-mobile: 20px;
+  --spacing-margin-mobile: 16px; /* 2×8 — was 20px (not on grid) */
 
   /* Border Radius */
   --radius-sm: 0.125rem;

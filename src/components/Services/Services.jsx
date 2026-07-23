@@ -24,27 +24,32 @@ const services = [
 export default function Services() {
   return (
     <section id="services" className="py-section-gap">
-      <div className="max-w-[1280px] mx-auto px-gutter">
+      {/* Container: responsive gutters */}
+      <div className="max-w-[1280px] mx-auto px-4 md:px-6">
         {/* Section Header */}
-        <div className="text-center mb-20">
+        {/* mb-16=64px consistent section header bottom margin (was mb-20/80px, aligns with projects) */}
+        <div className="text-center mb-16">
           <span className="font-geist text-[14px] leading-none tracking-[0.05em] font-medium text-primary tracking-widest uppercase">
             SERVICES
           </span>
-          <h2 className="font-inter text-[clamp(32px,4vw,48px)] leading-[1.2] tracking-[-0.01em] font-bold uppercase mt-4">
+          {/* mt-3=12px label-to-heading gap (was mt-4/16px, matches projects label-heading) */}
+          <h2 className="font-inter text-[clamp(32px,4vw,48px)] leading-[1.2] tracking-[-0.01em] font-bold uppercase mt-3">
             TECHNICAL SERVICES{" "}
             <span className="text-primary">I AM PROVIDING</span>
           </h2>
         </div>
 
         {/* Service Cards */}
+        {/* Cards: gap-6=24px between cards, responsive 1→2→4 cols */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service) => (
             <div
               key={service.title}
-              className="bento-card p-10 rounded-3xl group"
+              className="bento-card p-8 rounded-3xl group"
             >
               {/* Icon */}
-              <div className="w-16 h-16 rounded-2xl bg-primary-container/10 border border-primary/20 flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-on-primary transition-all duration-500">
+              {/* Icon box: mb-6=24px below icon (was mb-8/32px, tighter proportion with p-8 card) */}
+              <div className="w-16 h-16 rounded-2xl bg-primary-container/10 border border-primary/20 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-on-primary transition-all duration-500">
                 <span className="material-symbols-outlined text-3xl">
                   {service.icon}
                 </span>

@@ -23,10 +23,13 @@ const projects = [
 export default function Projects() {
   return (
     <section id="projects" className="py-section-gap bg-surface-container-lowest">
-      <div className="max-w-[1280px] mx-auto px-gutter">
+      {/* Container: responsive gutters px-4 mobile, px-6 desktop */}
+      <div className="max-w-[1280px] mx-auto px-4 md:px-6">
         {/* Section Header */}
+        {/* Section header: mb-16=64px bottom margin for separation from cards */}
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-16 gap-4">
-          <div className="space-y-4">
+          {/* space-y-3=12px between label and heading (was space-y-4/16px, tighter label-heading pair) */}
+          <div className="space-y-3">
             <span className="font-geist text-[14px] leading-none tracking-[0.05em] font-medium text-primary tracking-widest">
               MY WORK
             </span>
@@ -34,7 +37,8 @@ export default function Projects() {
               RECENT PROJECTS
             </h2>
           </div>
-          <div className="flex gap-4">
+          {/* gap-3=12px between arrow buttons (was gap-4/16px, slightly tighter pair) */}
+          <div className="flex gap-3">
             <button className="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center hover:border-primary transition-colors cursor-pointer">
               <span className="material-symbols-outlined">chevron_left</span>
             </button>
@@ -45,11 +49,13 @@ export default function Projects() {
         </div>
 
         {/* Project Cards */}
+        {/* Cards grid: gap-8=32px between project cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
             <div key={project.title} className="group">
               {/* Thumbnail */}
-              <div className="relative overflow-hidden rounded-3xl aspect-[16/10] bg-surface-container mb-6">
+              {/* Thumbnail: mb-4=16px below image (was mb-6/24px, tighter image-to-text) */}
+              <div className="relative overflow-hidden rounded-3xl aspect-[16/10] bg-surface-container mb-4">
                 <img
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   src={project.image}
@@ -66,16 +72,19 @@ export default function Projects() {
               </div>
 
               {/* Info */}
-              <div className="flex justify-between items-start">
+              {/* Info row with gap-4=16px to prevent text/button collision */}
+              <div className="flex justify-between items-start gap-4">
                 <div>
-                  <h3 className="font-inter text-[24px] leading-[1.3] font-[600] mb-1">
+                  {/* mb-2=8px between title and tags (was mb-1/4px, too tight) */}
+                  <h3 className="font-inter text-[24px] leading-[1.3] font-[600] mb-2">
                     {project.title}
                   </h3>
                   <p className="font-geist text-[14px] leading-none tracking-[0.05em] font-medium text-on-surface-variant">
                     {project.tags}
                   </p>
                 </div>
-                <button className="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center group-hover:bg-primary group-hover:text-on-primary transition-colors duration-300 shrink-0 cursor-pointer">
+                {/* mt-1=4px pushes arrow icon down to optically align with first line of title */}
+                <button className="w-10 h-10 mt-1 rounded-full border border-outline-variant flex items-center justify-center group-hover:bg-primary group-hover:text-on-primary transition-colors duration-300 shrink-0 cursor-pointer">
                   <span className="material-symbols-outlined text-sm">
                     arrow_outward
                   </span>
