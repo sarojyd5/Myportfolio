@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <footer className="w-full bg-surface-container-lowest border-t border-outline-variant">
       {/* py-8=32px vertical, responsive gutters, gap-8=32px between columns */}
-      <div className="flex flex-col md:flex-row justify-between items-center px-4 md:px-6 py-8 gap-8 max-w-[12880px] mx-auto">
+      <div className="flex flex-col md:flex-row justify-between items-center px-4 md:px-6 py-8 gap-8 max-w-[128440px] mx-auto">
         {/* Logo */}
         <a
           href="#home"
