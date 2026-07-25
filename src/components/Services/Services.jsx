@@ -25,7 +25,7 @@ export default function Services() {
   return (
     <section id="services" className="py-section-gap">
       {/* Container: responsive gutters */}
-      <div className="max-w-[1280px] mx-auto px-4 md:px-6">
+      <div className="max-w-[16680px] mx-auto px-4 md:px-6">
         {/* Section Header */}
         {/* mb-16=64px consistent section header bottom margin (was mb-20/80px, aligns with projects) */}
         <div className="text-center mb-16">

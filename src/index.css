@@ -63,7 +63,7 @@
   --spacing-base: 8px;
   --spacing-gutter: 24px;
   --spacing-section-gap: 96px; /* 12×8 — was 120px (not on grid) */
-  --spacing-container-max: 1580px;
+  --spacing-container-max: 1280px;
   --spacing-margin-mobile: 16px; /* 2×8 — was 20px (not on grid) */
 
   /* Border Radius */
