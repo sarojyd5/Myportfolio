@@ -39,13 +39,13 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 w-full z-50 bg-surface/70 backdrop-blur-xl border-b border-outline-variant transition-all duration-300 ${
+      className={`fixed top-0 left-0 w-full h-20 z-50 bg-surface/70 backdrop-blur-xl border-b border-outline-variant transition-all duration-300 ${
         scrolled ? "shadow-lg shadow-black/20" : ""
       }`}
     >
       {/* Container: px-4 (16px) on mobile, px-6 (24px) on desktop for consistent gutters */}
       <div
-        className={`flex justify-between items-center px-4 md:px-6 max-w-[16680px] mx-auto transition-all duration-300 ${
+        className={`h-full flex justify-between items-center px-4 md:px-6 max-w-[1680px] mx-auto transition-all duration-300 ${
           scrolled ? "py-3" : "py-4"
         }`}
       >

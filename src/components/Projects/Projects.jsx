@@ -1,7 +1,7 @@
 import cafeImg from "../../assets/images/project-cafe.png";
 import cryptoImg from "../../assets/images/project-crypto.png";
 import teamhubImg from "../../assets/images/project-teamhub.png";
-
+ 
 const projects = [
   {
     title: "Smart Cafe Management System",
@@ -19,12 +19,12 @@ const projects = [
     image: teamhubImg,
   },
 ];
-
+ 
 export default function Projects() {
   return (
     <section id="projects" className="py-section-gap bg-surface-container-lowest">
       {/* Container: responsive gutters px-4 mobile, px-6 desktop */}
-      <div className="max-w-[16680px] mx-auto px-4 md:px-6">
+      <div className="max-w-[1680px] mx-auto px-4 md:px-6">
         {/* Section Header */}
         {/* Section header: mb-16=64px bottom margin for separation from cards */}
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-16 gap-4">
@@ -47,7 +47,7 @@ export default function Projects() {
             </button>
           </div>
         </div>
-
+ 
         {/* Project Cards */}
         {/* Cards grid: gap-8=32px between project cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -70,7 +70,7 @@ export default function Projects() {
                   </button>
                 </div>
               </div>
-
+ 
               {/* Info */}
               {/* Info row with gap-4=16px to prevent text/button collision */}
               <div className="flex justify-between items-start gap-4">
@@ -97,3 +97,4 @@ export default function Projects() {
     </section>
   );
 }
+ 

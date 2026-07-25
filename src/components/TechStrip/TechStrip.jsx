@@ -1,5 +1,5 @@
 const techs = ["REACT.JS", "NODE.JS", "POSTGRES", "DOCKER", "TAILWIND", "TYPESCRIPT", "AWS", "NEXTJS"];
-
+ 
 export default function TechStrip() {
   return (
     // py-12=48px vertical padding | px-4=16px horizontal padding to prevent edge bleed on mobile
@@ -20,3 +20,4 @@ export default function TechStrip() {
     </div>
   );
 }
+ 
