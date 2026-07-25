@@ -24,7 +24,7 @@ export default function Projects() {
   return (
     <section id="projects" className="py-section-gap bg-surface-container-lowest">
       {/* Container: responsive gutters px-4 mobile, px-6 desktop */}
-      <div className="max-w-[1280px] mx-auto px-4 md:px-6">
+      <div className="max-w-[16680px] mx-auto px-4 md:px-6">
         {/* Section Header */}
         {/* Section header: mb-16=64px bottom margin for separation from cards */}
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-16 gap-4">
