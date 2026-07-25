@@ -10,7 +10,7 @@ export default function About() {
   return (
     <section id="about" className="py-section-gap relative">
       {/* Container: responsive gutters + tighter gap on mobile (was gap-24/96px on all screens, now gap-12/48px → gap-16/64px) */}
-      <div className="max-w-[1280px] mx-auto px-4 md:px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <div className="max-w-[16680px] mx-auto px-4 md:px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
         {/* Left – Image */}
         <div className="relative">
           {/* Decorative circle positioned on 8px grid: -bottom-8=32px, -left-8=32px (was -10/40px) */}
