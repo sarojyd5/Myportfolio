@@ -17,7 +17,7 @@ export default function App() {
     <>
       <Header />
 
-      <main>
+      <main className="pt-20">
         <Hero />
         <TechStrip />
 
