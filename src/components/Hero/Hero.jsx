@@ -12,7 +12,7 @@ export default function Hero() {
       <div className="absolute bottom-1/4 -left-48 w-96 h-96 circle-bg blur-3xl opacity-15" />
 
       {/* Container: px-4 (16px) mobile, px-6 (24px) desktop | gap-8 (32px) mobile, gap-16 (64px) desktop */}
-      <div className="max-w-[1280px] mx-auto px-4 md:px-6 w-full grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center relative z-10">
+      <div className="max-w-[16680px] mx-auto px-4 md:px-6 w-full grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center relative z-10">
         {/* Left – Copy */}
         {/* space-y-8 = 32px consistent vertical rhythm (was space-y-6/24px) */}
         <div className="space-y-8">
