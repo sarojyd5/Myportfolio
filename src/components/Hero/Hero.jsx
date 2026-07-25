@@ -8,8 +8,8 @@ export default function Hero() {
     >
       {/* Background Effects */}
       <div className="absolute inset-0 line-pattern pointer-events-none opacity-50" />
-      <div className="absolute top-1/4 right-0 w-96 h-96 circle-bg blur-3xl opacity-30" />
-      <div className="absolute bottom-1/4 -left-48 w-96 h-96 circle-bg blur-3xl opacity-15" />
+      <div className="absolute top-1/4 right-0 w-96 h-80 circle-bg blur-3xl opacity-30" />
+      <div className="absolute bottom-1/4 -left-48 w-96 h-80 circle-bg blur-3xl opacity-15" />
 
       {/* Container: px-4 (16px) mobile, px-6 (24px) desktop | gap-8 (32px) mobile, gap-16 (64px) desktop */}
       <div className="max-w-[16680px] mx-auto px-4 md:px-6 w-full grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center relative z-10">
