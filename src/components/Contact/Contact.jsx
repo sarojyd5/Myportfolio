@@ -4,7 +4,7 @@ export default function Contact() {
       <div className="absolute inset-0 line-pattern opacity-10" />
 
       {/* Container: responsive gutters */}
-      <div className="max-w-[1280px] mx-auto px-4 md:px-6 relative z-10">
+      <div className="max-w-[16680px] mx-auto px-4 md:px-6 relative z-10">
         {/* Card: p-8=32px mobile, p-16=64px desktop (was p-12/p-24, p-16 is on 8px grid) */}
         <div className="bg-primary-container/5 border border-outline-variant rounded-[40px] p-8 md:p-16 text-center overflow-hidden relative">
           {/* Background glow orbs */}
