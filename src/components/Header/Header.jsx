@@ -45,7 +45,7 @@ export default function Header() {
     >
       {/* Container: px-4 (16px) on mobile, px-6 (24px) on desktop for consistent gutters */}
       <div
-        className={`flex justify-between items-center px-4 md:px-6 max-w-[1280px] mx-auto transition-all duration-300 ${
+        className={`flex justify-between items-center px-4 md:px-6 max-w-[128440px] mx-auto transition-all duration-300 ${
           scrolled ? "py-3" : "py-4"
         }`}
       >
